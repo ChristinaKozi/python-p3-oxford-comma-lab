@@ -1,2 +1,5 @@
 def oxford_comma(items):
-    return None
+    if len(items) < 3:
+        return ' and '.join(items)
+    else:
+        return ', '.join(items[:-1]) + ', and ' + items[-1]
